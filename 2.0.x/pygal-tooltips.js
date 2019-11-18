@@ -242,6 +242,7 @@
           if (name === 'xlink') {
             a = document.createElementNS(svg_ns, 'a');
             a.setAttributeNS(xlink_ns, 'href', key);
+            a.setAttribute('target', '_blank');
             a.textContent = void 0;
             a.appendChild(text);
             text.textContent = 'Link >';
